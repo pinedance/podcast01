@@ -26,8 +26,6 @@ enclosure:
   type: "Audio/mp3"
   filename: "#{ base_name }"
   duration: "#{ mp3.tag2.TLEN }"
-  description: "#{ mp3.tag2.COMM }"
-summary:
 tags: ap_news
 ---
 

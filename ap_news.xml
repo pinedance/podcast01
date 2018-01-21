@@ -29,7 +29,7 @@
    <title>Learn English</title>
    <link>{{ site.url }}</link>
  </image>
- <itunes:category text="Arts"/>
+ <itunes:category text="Others"/>
 
 {% for post in site.posts %}
 	{% if post.tags contains "ap_news" %}
@@ -41,12 +41,12 @@
 	    <itunes:order>{{ forloop.index }}</itunes:order>
 	    <itunes:author>{{ site.data.theme.name }}</itunes:author>
 	    <itunes:explicit>{{ post.explicit }}</itunes:explicit>
-	    <itunes:summary>{{ post.summary }}</itunes:summary>
+	    <itunes:summary>{{ post.content }}</itunes:summary>
 	    <itunes:subtitle>{{ post.subtitle }}</itunes:subtitle>
 	    <itunes:duration>{{ post.enclosure.duration }}</itunes:duration>
 	    <itunes:image href="http://i1.sndcdn.com/avatars-000337673420-qndzm0-original.jpg"/>
 	    <enclosure type="{{ post.enclosure.type }}" url="{{ site.url }}/mp3/{{ post.enclosure.filename }}.mp3" length=""/>
-	    <description>{{ post.enclosure.description }}</description>
+	    <description>{{ post.content }}</description>
 	</item>
 	{% endif %}
 {% endfor %}
