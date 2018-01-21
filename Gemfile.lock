@@ -194,6 +194,8 @@ GEM
     minima (2.1.1)
       jekyll (~> 3.3)
     minitest (5.11.1)
+    mp3info (0.8.5)
+      ruby-mp3info (>= 0.8.5)
     multipart-post (2.0.0)
     net-dns (0.8.0)
     nokogiri (1.8.1)
@@ -209,6 +211,7 @@ GEM
     rouge (2.2.1)
     ruby-enum (0.7.1)
       i18n
+    ruby-mp3info (0.8.10)
     rubyzip (1.2.1)
     safe_yaml (1.0.4)
     sass (3.5.5)
@@ -233,6 +236,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  mp3info
 
 BUNDLED WITH
    1.16.1
