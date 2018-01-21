@@ -46,7 +46,7 @@
 	    <itunes:duration>{{ post.enclosure.duration }}</itunes:duration>
 	    <itunes:image href="http://i1.sndcdn.com/avatars-000337673420-qndzm0-original.jpg"/>
 	    <enclosure type="{{ post.enclosure.type }}" url="{{ site.url }}/mp3/{{ post.enclosure.filename }}.mp3" length=""/>
-	    <description>{{ post.content }}</description>
+	    <description>{{ post.enclosure.description }}</description>
 	</item>
 	{% endif %}
 {% endfor %}

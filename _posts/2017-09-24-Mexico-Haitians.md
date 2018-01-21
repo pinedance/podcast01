@@ -1,11 +1,12 @@
 ---
 layout: post
 explicit: no
-title: "Mexico Haitians"
+title: "20170924 Mexico Haitians"
 enclosure:
   type: "Audio/mp3"
   filename: "20170924_Mexico Haitians"
   duration: "00:00:49"
+  description: ""
 summary:
 tags: ap_news
 ---

@@ -1,11 +1,12 @@
 ---
 layout: post
 explicit: no
-title: "Self Driving Boat"
+title: "20170920 Self Driving Boat"
 enclosure:
   type: "Audio/mp3"
   filename: "20170920_Self Driving Boat"
   duration: "00:00:41"
+  description: ""
 summary:
 tags: ap_news
 ---

@@ -1,11 +1,12 @@
 ---
 layout: post
 explicit: no
-title: "Marijuana Town"
+title: "20170911 Marijuana Town"
 enclosure:
   type: "Audio/mp3"
   filename: "20170911_Marijuana Town"
   duration: "00:00:43"
+  description: ""
 summary:
 tags: ap_news
 ---

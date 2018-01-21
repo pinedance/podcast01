@@ -21,11 +21,12 @@ filelist.each do |filename|
 ---
 layout: post
 explicit: no
-title: "#{ base_name.split('_')[-1] }"
+title: "#{created_date} #{ title }"
 enclosure:
   type: "Audio/mp3"
   filename: "#{ base_name }"
   duration: "#{ mp3.tag2.TLEN }"
+  description: "#{ mp3.tag2.COMM }"
 summary:
 tags: ap_news
 ---
