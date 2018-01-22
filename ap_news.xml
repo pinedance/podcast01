@@ -5,10 +5,10 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
- <atom:link href="{{ site.url }}/atom.xml" rel="self" type="application/rss+xml"/>
- <atom:link href="{{ site.url }}"/>
+ <atom:link href="{{site.url}}{{site.baseurl}}/ap_news.xml" rel="self" type="application/rss+xml"/>
+ <atom:link href="{{site.url}}{{site.baseurl}}"/>
  <title>HearHear</title>
- <link href="{{ site.url }}">{{ site.url }}</link>
+ <link href="{{site.url}}{{site.baseurl}}">{{site.url}}{{site.baseurl}}</link>
  <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
  <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
  <ttl>60</ttl>
@@ -27,7 +27,7 @@
  <image>
    <url>http://i1.sndcdn.com/avatars-000337673420-qndzm0-original.jpg</url>
    <title>Learn English</title>
-   <link>{{ site.url }}</link>
+   <link>{{site.url}}{{site.baseurl}}</link>
  </image>
  <itunes:category text="Others"/>
 
@@ -37,7 +37,7 @@
 	    <guid isPermaLink="false">{{ post.id }}</guid>
 	    <title>{{ post.title }}</title>
 	    <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-	    <link>{{site.url}}{{ post.url }}</link>
+	    <link>{{site.url}}{{site.baseurl}}{{ post.url }}</link>
 	    <itunes:order>{{ forloop.index }}</itunes:order>
 	    <itunes:author>{{ site.data.theme.name }}</itunes:author>
 	    <itunes:explicit>{{ post.explicit }}</itunes:explicit>
@@ -45,7 +45,7 @@
 	    <itunes:subtitle>{{ post.subtitle }}</itunes:subtitle>
 	    <itunes:duration>{{ post.enclosure.duration }}</itunes:duration>
 	    <itunes:image href="http://i1.sndcdn.com/avatars-000337673420-qndzm0-original.jpg"/>
-	    <enclosure type="{{ post.enclosure.type }}" url="{{ site.url }}/mp3/{{ post.enclosure.filename }}.mp3" length=""/>
+	    <enclosure type="{{ post.enclosure.type }}" url="{{site.url}}{{site.baseurl}}/mp3/{{ post.enclosure.filename }}.mp3" length=""/>
 	    <description>{{ post.content }}</description>
 	</item>
 	{% endif %}

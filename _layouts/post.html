@@ -1,4 +1,4 @@
---- 
+---
 layout: default
 ---
 
@@ -11,16 +11,27 @@ layout: default
 
 <h1 class="title">{{ page.title }}</h1>
 
+<br>
+
+<audio controls>
+  <source src="{{ site.baseurl }}/mp3/{{ page.enclosure.filename }}.mp3" type="audio/mp3">
+</audio>
+
+
+<br>
+
 <div id="post">
   {{ content }}
 </div>
+
+
 
 <div id="related">
   <h3>Related Posts</h3>
   <ul class="posts">
     {% for post in site.related_posts limit:3 %}
     <li>
-      <span>{{ post.date | date_to_string }} &raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a>
+      <span>{{ post.date | date_to_string }} &raquo;</span> <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
   </ul>
@@ -28,8 +39,8 @@ layout: default
   <h3>Tags :</h3>
   <span>
     {% for tag in page.tags %}
-      <a href="{{ '/tag/' | append:tag }}.html" rel="tag"> 
-         {{ tag }} 
+      <a href="{{site.baseurl}}{{ '/tag/' | append:tag }}.html" rel="tag">
+         {{ tag }}
         {% if forloop.last %}
         .
         {% else %}
@@ -40,3 +51,8 @@ layout: default
   </span>
 </div>
 
+
+<!-- media player plyr -->
+<link rel="stylesheet" href="{{site.baseurl}}/assets/plyr/plyr.css">
+<script src="{{site.baseurl}}/assets/plyr/plyr.js"></script>
+<script>plyr.setup({"seekTime": 5});</script>

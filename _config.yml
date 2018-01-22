@@ -1,6 +1,6 @@
 # General Jekyll Config
 highlighter: rouge
-url: https://pinedance.github.io/podcast01
+url: https://pinedance.github.io
 lsi: false
 exclude: [LICENSE, README.md, .gitignore, Gemfile, Gemfile.lock, _buildPostFromMP3.rb]
 
