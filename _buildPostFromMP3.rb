@@ -16,7 +16,7 @@ filelist.each do |filename|
 		len_m = (mp3.length / 60).floor - ( len_h * 60 )
 		len_s = (mp3.length).floor - ( len_h * 3600 ) - ( len_m * 60 )
 		mp3.tag2.TLEN = "#{ len_h.to_s.rjust(2, '0') }:#{ len_m.to_s.rjust(2, '0') }:#{ len_s.to_s.rjust(2, '0') }"
-
+		script = ( mp3.tag2.COMM )? mp3.tag2.COMM : ""
 		ym = string = <<-FIN
 ---
 layout: post
@@ -29,7 +29,8 @@ enclosure:
 tags: ap_news
 ---
 
-#{ mp3.tag2.COMM }
+#{ script.gsub(/\r?\n/, "\n\n") }
+
 FIN
 
 		puts "Creating #{mdfilename} ..."
