@@ -11,7 +11,6 @@ filelist.each do |filename|
 	mdfilename = "_posts/#{created_date[0..3]}-#{created_date[4..5]}-#{created_date[6..7]}-#{title.gsub(' ', '-')}.md"
 
 	Mp3Info.open( filename ) do |mp3|
-		mp3.tag.title = title
 		len_h = (mp3.length / 3600).floor
 		len_m = (mp3.length / 60).floor - ( len_h * 60 )
 		len_s = (mp3.length).floor - ( len_h * 3600 ) - ( len_m * 60 )
@@ -36,6 +35,8 @@ FIN
 		puts "Creating #{mdfilename} ..."
 		File.open( mdfilename, 'w').puts ym
 
+		mp3.tag.title = title
+ 		mp3.tag2.COMM = script
 	end
 
 

@@ -21,7 +21,7 @@ But the military stopped using it in the 50's after a hepatitis outbreak tainted
 
 하지만 군대는 간염 발생이 혈액 공급을 오염시킨 이후 50년대에는 이것의 사용을 중단했습니다.
 
-• hepatitis 간염
+• hepatitis 간염 
 
 • taint 오염시키다, 더럽히다
 
@@ -74,3 +74,4 @@ Now the army is working with American company Teleflex to win Food and Drug Admi
 Peter Banda, Associated Press, Peyton, Colorado.
 
 이상 콜로라도 주 페이턴에서, AP 뉴스 피터 반다였습니다.
+
