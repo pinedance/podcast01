@@ -2,6 +2,8 @@ require "mp3info"
 
 filelist = Dir["./mp3/*.mp3"]
 
+urlrgx = /(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?/
+
 filelist.each do |filename|
 
 	puts "Detected #{filename}"
@@ -16,6 +18,7 @@ filelist.each do |filename|
 		len_s = (mp3.length).floor - ( len_h * 3600 ) - ( len_m * 60 )
 		mp3.tag2.TLEN = "#{ len_h.to_s.rjust(2, '0') }:#{ len_m.to_s.rjust(2, '0') }:#{ len_s.to_s.rjust(2, '0') }"
 		script = ( mp3.tag2.COMM )? mp3.tag2.COMM : ""
+		post_body = script.gsub(/\r?\n/, "\n\n").gsub(urlrgx, '[Ref](\\0)')
 		ym = string = <<-FIN
 ---
 layout: post
@@ -28,7 +31,7 @@ enclosure:
 tags: ap_news
 ---
 
-#{ script.gsub(/\r?\n/, "\n\n") }
+#{ post_body }
 
 FIN
 

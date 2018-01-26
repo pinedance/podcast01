@@ -61,5 +61,5 @@ I’m Rita Foley.
 
 
 
-http://www.hackers.co.kr/?c=s_eng/eng_contents/I_others_APnews&iframe=&uid=5580
+[Ref](http://www.hackers.co.kr/?c=s_eng/eng_contents/I_others_APnews&iframe=&uid=5580)
 

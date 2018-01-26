@@ -9,7 +9,7 @@ enclosure:
 tags: ap_news
 ---
 
-www.hackers.co.kr/?c=s_eng/eng_con…iframe=&uid=5537
+[Ref](www.hackers.co.kr/?c=s_eng/eng_con…iframe=&uid=5537)
 
 
 

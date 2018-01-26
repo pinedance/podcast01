@@ -57,5 +57,5 @@ Mike Householder, Associated Press, Detroit.
 
 
 
-http://www.hackers.co.kr/?c=s_eng/eng_contents/I_others_APnews&iframe=&uid=5575
+[Ref](http://www.hackers.co.kr/?c=s_eng/eng_contents/I_others_APnews&iframe=&uid=5575)
 
