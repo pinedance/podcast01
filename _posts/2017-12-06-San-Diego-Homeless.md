@@ -4,7 +4,7 @@ explicit: no
 title: "20171206 San Diego Homeless"
 enclosure:
   type: "Audio/mp3"
-  filename: "20171206_San Diego Homeless"
+  filename: "20171206_San Diego Homeless.mp3"
   duration: "00:00:47"
 tags: ap_news
 ---

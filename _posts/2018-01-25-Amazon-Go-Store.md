@@ -4,7 +4,7 @@ explicit: no
 title: "20180125 Amazon Go Store"
 enclosure:
   type: "Audio/mp3"
-  filename: "20180125_Amazon Go Store"
+  filename: "20180125_Amazon Go Store.mp3"
   duration: "00:00:33"
 tags: ap_news
 ---

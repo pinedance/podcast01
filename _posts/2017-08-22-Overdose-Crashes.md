@@ -4,7 +4,7 @@ explicit: no
 title: "20170822 Overdose-Crashes"
 enclosure:
   type: "Audio/mp3"
-  filename: "20170822_Overdose-Crashes"
+  filename: "20170822_Overdose-Crashes.mp3"
   duration: "00:00:40"
 tags: ap_news
 ---

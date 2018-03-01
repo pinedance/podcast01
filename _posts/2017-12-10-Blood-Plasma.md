@@ -4,7 +4,7 @@ explicit: no
 title: "20171210 Blood Plasma"
 enclosure:
   type: "Audio/mp3"
-  filename: "20171210_Blood Plasma"
+  filename: "20171210_Blood Plasma.mp3"
   duration: "00:00:48"
 tags: ap_news
 ---

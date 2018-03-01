@@ -4,7 +4,7 @@ explicit: no
 title: "20180206 Polar Bear Weight Loss"
 enclosure:
   type: "Audio/mp3"
-  filename: "20180206_Polar Bear Weight Loss"
+  filename: "20180206_Polar Bear Weight Loss.mp3"
   duration: "00:00:41"
 tags: ap_news
 ---

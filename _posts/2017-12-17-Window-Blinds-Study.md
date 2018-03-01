@@ -4,7 +4,7 @@ explicit: no
 title: "20171217 Window Blinds Study"
 enclosure:
   type: "Audio/mp3"
-  filename: "20171217_Window Blinds Study"
+  filename: "20171217_Window Blinds Study.mp3"
   duration: "00:00:46"
 tags: ap_news
 ---

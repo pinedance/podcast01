@@ -4,7 +4,7 @@ explicit: no
 title: "20180126 Smoking Tech"
 enclosure:
   type: "Audio/mp3"
-  filename: "20180126_Smoking Tech"
+  filename: "20180126_Smoking Tech.mp3"
   duration: "00:00:44"
 tags: ap_news
 ---
