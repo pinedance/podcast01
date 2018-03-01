@@ -2,7 +2,7 @@
 highlighter: rouge
 url: https://pinedance.github.io
 lsi: false
-exclude: ["LICENSE", "README.md", ".gitignore", "Gemfile", "Gemfile.lock", "_buildPostFromMP3.rb", "mp3/"]
+exclude: ["LICENSE", "README.md", ".gitignore", "Gemfile", "Gemfile.lock", "_buildPostFromMP3.rb"]
 
 # Site Settings
 baseurl:            "/podcast01" # Base URL must end WITHOUT a slash, default: ""
