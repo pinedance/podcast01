@@ -21,7 +21,7 @@ def buildPost( filename )
 		len_m = (mp3.length / 60).floor - ( len_h * 60 )
 		len_s = (mp3.length).floor - ( len_h * 3600 ) - ( len_m * 60 )
 		mp3.tag2.TLEN = "#{ len_h.to_s.rjust(2, '0') }:#{ len_m.to_s.rjust(2, '0') }:#{ len_s.to_s.rjust(2, '0') }"
-		script = ( mp3.tag2.COMM )? mp3.tag2.COMM : ""
+		script = ( mp3.tag2.COMM )? mp3.tag2.COMM + "" : ""
 		post_body = script.gsub(/\r?\n/, "\n\n").gsub( URLRGX, '[Ref](\\0)' )
 		ym = string = <<-FIN
 ---
@@ -42,7 +42,7 @@ FIN
 		File.open( mdfilename, 'w').puts ym
 
 		mp3.tag.title = title
-		mp3.tag2.COMM = script
+
 	end
 
 end
