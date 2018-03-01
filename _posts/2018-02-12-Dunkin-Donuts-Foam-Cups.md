@@ -1,7 +1,7 @@
 ---
 layout: post
 explicit: no
-title: "20180212 Dunkin Donuts-Foam Cups.MP3"
+title: "20180212 Dunkin Donuts-Foam Cups"
 enclosure:
   type: "Audio/mp3"
   filename: "20180212_Dunkin Donuts-Foam Cups.MP3"

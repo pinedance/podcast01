@@ -4,7 +4,7 @@ explicit: no
 title: "20180204 Mine Robots"
 enclosure:
   type: "Audio/mp3"
-  filename: "20180204_Mine Robots"
+  filename: "20180204_Mine Robots.mp3"
   duration: "00:00:46"
 tags: ap_news
 ---

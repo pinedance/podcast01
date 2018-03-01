@@ -4,7 +4,7 @@ explicit: no
 title: "20180130 Trump Toilet"
 enclosure:
   type: "Audio/mp3"
-  filename: "20180130_Trump Toilet"
+  filename: "20180130_Trump Toilet.mp3"
   duration: "00:00:42"
 tags: ap_news
 ---
