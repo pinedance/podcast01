@@ -41,12 +41,16 @@
 	    <itunes:order>{{ forloop.index }}</itunes:order>
 	    <itunes:author>{{ site.data.theme.name }}</itunes:author>
 	    <itunes:explicit>{{ post.explicit }}</itunes:explicit>
-	    <itunes:summary>{{ post.content }}</itunes:summary>
+	    <itunes:summary>{{ post.content | remove: '<p>' | remove: '</p>' }}</itunes:summary>
 	    <itunes:subtitle>{{ post.subtitle }}</itunes:subtitle>
 	    <itunes:duration>{{ post.enclosure.duration }}</itunes:duration>
 	    <itunes:image href="http://i1.sndcdn.com/avatars-000337673420-qndzm0-original.jpg"/>
-	    <enclosure type="{{ post.enclosure.type }}" url="{{site.url}}{{site.baseurl}}/mp3/{{ post.enclosure.filename }}.mp3" length=""/>
-	    <description>{{ post.content }}</description>
+	    <enclosure type="{{ post.enclosure.type }}" url="{{site.url}}{{site.baseurl}}/mp3/{{ post.enclosure.filename }}" length=""/>
+	    <description>
+			<![CDATA[
+			{{ post.content | remove: '<p>' | remove: '</p>' }}
+			]]>
+		</description>
 	</item>
 	{% endif %}
 {% endfor %}
